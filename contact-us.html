@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US"><head>
+<html dir="ltr" lang="en-US">
+<head>
     <meta charset="utf-8">
     <title>Contacts</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
@@ -22,7 +23,28 @@
 .ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
 .ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
 
-</style></head>
+<!-- Google -->
+<script>
+function initialize()
+{
+  var mapProp = { center: new google.maps.LatLng(53.456113, -2.011467), zoom:7, mapTypeId: google.maps.MapTypeId.ROADMAP };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+</script>
+
+
+</style>
+</head>
 <body>
 <div id="art-main">
     <div id="art-header-bg">
@@ -66,17 +88,22 @@
         <p>T:+44 1457 513764</p><p>M:+44 771 935 6791<br><br></p>
          
         <p>W: www.visiorecruitment.com</p><p>E: management@visiorecruitment.com</p>
+		
+		<div id="googleMap" style="width:500px;height:500px;"></div>                
+		
     </div>
     </div>
 </div>
-</div>
-                                
-                
 
+</div>                              
 </article></div>
                     </div>
                 </div>
-            </div><footer class="art-footer">
+            </div>
+			
+			
+			
+			<footer class="art-footer">
 <div class="art-content-layout layout-item-0">
     <div class="art-content-layout-row">
     <div class="art-layout-cell" style="width: 100%">
