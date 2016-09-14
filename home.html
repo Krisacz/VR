@@ -31,6 +31,35 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+
+<!-- FLOATING SCRIPT -->
+<script type="text/javascript" src="floating-1.12.js"></script>
+<script type="text/javascript">  
+    floatingMenu.add('floatdiv',  
+        {  
+            // Represents distance from left or right browser window  
+            // border depending upon property used. Only one should be  
+            // specified.  
+            targetLeft: 10,  
+            //targetRight: 10,  
+  
+            // Represents distance from top or bottom browser window  
+            // border depending upon property used. Only one should be  
+            // specified.  
+            //targetTop: 10,  
+            //targetBottom: 10,  
+  
+            // Uncomment one of those if you need centering on  
+            // X- or Y- axis.  
+            // centerX: true,  
+            centerY: true,  
+  
+            // Remove this one if you don't want snap effect  
+            snap: true  
+        });  
+</script>  
+<!-- END OF FLOATING SCRIPT -->
+
 <script>jQuery(function($) {
     'use strict';
     if ($.fn.slider) {
@@ -62,7 +91,10 @@ s0.parentNode.insertBefore(s1,s0);
         });
     }
 });
-</script><style>.art-content .art-postcontent-0 .layout-item-0 { background: ;  }
+</script>
+
+<style>	
+.art-content .art-postcontent-0 .layout-item-0 { background: ;  }
 .art-content .art-postcontent-0 .layout-item-1 { padding: 10px;  }
 .art-content .art-postcontent-0 .layout-item-2 { padding-top: 10px;padding-right: 0px;padding-bottom: 10px;padding-left: 10px;  }
 .art-content .art-postcontent-0 .layout-item-3 { padding-right: 10px;padding-left: 10px;  }
@@ -208,7 +240,32 @@ height: 10px;
 }
 
 </style></head>
+
+<!-- ========================================================================================== -->
+<!-- ========================================================================================== -->
+<!-- FLOATING REVIEWS -->	
+<div id="floatdiv" style=" position:absolute; width:250px;height:375px;bottom:5px;left:5px; padding:5px;background:#3163b3; border:2px solid #1bb3fe; z-index:100">  
+<p style="font-size:12px"><i>"Visio Recruitment helped me by supplying superb staff. The result was excellent. One thing I liked was their efficiency to detail.
+I found the experience worthwhile. I would recommend Visio Recruitment to people who need good staff. As always, their work was fantastic. We love the way they translate our needs into reality.
+Plus, we can count on them to deliver on time, every time. I think they are awesome! Will use them again and again."</i></p>
+<br/>
+<p style="font-size:14px; text-align: right"><b>Richard T., on behalf of KSM</b></p>
+
+
+<br/>
+<p style="font-size:12px"><i>"Visio Recruitment helped me by finding me a full time job with accommodation. The result was that I could start in the right time,
+ everything was clear and good. One thing I liked about them was their quick and helpful actions. I would recommend them because they are excellent.
+ They do a very good job and they have proved helpful. Whenever I was unsure in any details they gave me the correct answers and supported me in finding the best solution. I am thankful for their dedication.
+"</i></p>
+<br/>
+<p style="font-size:14px; text-align: right"><b>Csilla S.T., Candidate</b></p>
+
+</div> 
+<!-- ========================================================================================== -->
+<!-- ========================================================================================== -->
+
 <body>
+
 <div id="art-main">
     <div id="art-header-bg">
             </div>
@@ -216,14 +273,8 @@ height: 10px;
     </div>
     <div class="art-sheet clearfix">
 <header class="art-header">
-
-
-    <div class="art-shapes">
-
-            </div>
-
-
-
+    <div class="art-shapes"></div>
+	
 
 <nav class="art-nav">
     <div class="art-nav-inner">
@@ -239,7 +290,9 @@ height: 10px;
                         <div class="art-layout-cell art-content"><article class="art-post art-article">
                                 
                                 <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout layout-item-0">
-    <div class="art-content-layout-row">
+    <div class="art-content-layout-row">	
+	
+	
     <div class="art-layout-cell layout-item-1" style="width: 25%" >
         <h4 style="line-height: 100%; text-align: left;"><span style="text-decoration: underline;">Child Care</span></h4>
 		
@@ -293,7 +346,8 @@ height: 10px;
 		<span><br></span>
 		
          <img width="199" height="134" alt="" src="images/shutterstock_2883443.jpg" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;"><p style="text-align: center;"><br></p>
-    </div><div class="art-layout-cell layout-item-1" style="width: 25%" >
+    </div>
+	<div class="art-layout-cell layout-item-1" style="width: 25%" >
         <h4 style="line-height: 100%;"><span style="text-decoration: underline;">Job Seekers</span></h4>
 		
 		<h4 style="line-height: 100%; text-align: left;">
@@ -489,6 +543,5 @@ height: 10px;
 
     </div>    
 </div>
-
 
 </body></html>
